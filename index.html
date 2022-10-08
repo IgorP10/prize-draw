@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorteio</title>
+    
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/b1a84f13b6.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <a class="menu-item"> Menu</a>
+    </header>
+
+    <main class="main">
+        <section class="main-written">
+            <div class="contents">
+                <div class="title">
+                    <h1 class="main-title">Sorteio da Rifa, no valor de <br> R$1000,00
+                        <!-- <i id="icon-money" class="fas fa-sharp fa-solid fa-money-bill-1-wave fa-beat"></i> -->
+                        <i class="fas fa-rocket fa-beat"></i>
+                    </h1>
+                </div>
+
+                <p class="input">Número mínimo a ser sorteado: <input type="number" name="minimum" id="minimum"></p>
+                <p class="input">Número máximo a ser sorteado: <input type="number" name="maximum" id="maximum"></p>
+
+                <div class="container-button-draw">
+                    <button class="button-draw" onclick="random()">Sortear</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
