@@ -27,19 +27,28 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-direction: column;
 }
 
-.contents .title {
+.section-title {
+    margin-top: auto;
+}
+
+.container-title .title {
     text-align: center;
     margin-bottom: 32px;
 }
 
-.contents .main-title {
+.container-title .main-title {
     color: white;
     font-size: 48px;
 }
 
-.contents .input {
+.section-form {
+    border: 0.4px solid #FFFFFF;
+}
+
+.section-form .label-form-main {
     text-align: center;
     font-size: 22px;
     color: white;

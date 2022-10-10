@@ -14,24 +14,32 @@
     </header>
 
     <main class="main">
-        <section class="main-written">
-            <div class="contents">
+        <section class="section-title">
+            <div class="container-title">
                 <div class="title">
                     <h1 class="main-title">Sorteio da Rifa, no valor de <br> R$1000,00
                         <!-- <i id="icon-money" class="fas fa-sharp fa-solid fa-money-bill-1-wave fa-beat"></i> -->
                         <i class="fas fa-rocket fa-beat"></i>
                     </h1>
                 </div>
-
-                <p class="input">Número mínimo a ser sorteado: <input type="number" name="minimum" id="minimum"></p>
-                <p class="input">Número máximo a ser sorteado: <input type="number" name="maximum" id="maximum"></p>
-
-                <div class="container-button-draw">
-                    <button class="button-draw" onclick="random()">Sortear</button>
-                </div>
             </div>
         </section>
 
+        <section class="section-form">
+            <form action="result.html">
+                <label for="label-min" class="label-form-main">Número mínimo a ser sorteado: <br></label>
+                <input type="number" name="minimum" id="minimum"><br>
+                <label for="label-max" class="label-form-main">Número máximo a ser sorteado: <br></label>
+                <input type="number" name="maximum" id="maximum"><br>
+            </form>
+        </section>
+
+        <div class="container-button-draw">
+            <!-- <form action="result.html">
+                <button type="submit" class="button-draw" onclick="random()">Sortear</button>
+            </form> -->
+            <button type="submit" class="button-draw" onclick="random()">Sortear</button>
+        </div>
     </main>
 </body>
 </html>
