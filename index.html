@@ -1,45 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>Sorteio</title>
-    
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/b1a84f13b6.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14º Salário 💰💲🤑</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header class="header">
-        <a class="menu-item"> Menu</a>
-    </header>
-
-    <main class="main">
-        <section class="section-title">
-            <div class="container-title">
-                <div class="title">
-                    <h1 class="main-title">Sorteio da Rifa, no valor de <br> R$1000,00
-                        <!-- <i id="icon-money" class="fas fa-sharp fa-solid fa-money-bill-1-wave fa-beat"></i> -->
-                        <i class="fas fa-rocket fa-beat"></i>
-                    </h1>
-                </div>
-            </div>
-        </section>
-
-        <section class="section-form">
-            <form action="result.html">
-                <label for="label-min" class="label-form-main">Número mínimo a ser sorteado: <br></label>
-                <input type="number" name="minimum" id="minimum"><br>
-                <label for="label-max" class="label-form-main">Número máximo a ser sorteado: <br></label>
-                <input type="number" name="maximum" id="maximum"><br>
-            </form>
-        </section>
-
-        <div class="container-button-draw">
-            <!-- <form action="result.html">
-                <button type="submit" class="button-draw" onclick="random()">Sortear</button>
-            </form> -->
-            <button type="submit" class="button-draw" onclick="random()">Sortear</button>
+    <div class="container">
+        <h1>14º Salário 💰💲🤑💸</h1>
+        <div class="input-group">
+            <label for="start">Número Inicial</label>
+            <input type="number" id="start" placeholder="Ex.: 1">
         </div>
-    </main>
+        <div class="input-group">
+            <label for="end">Número Final</label>
+            <input type="number" id="end" placeholder="Ex.: 100">
+        </div>
+        <button id="start-draw">Sortear!</button>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h2>E o número sorteado é...</h2>
+            <div class="result-number" id="result-number">--</div>
+            <button class="close-btn" id="close-modal">Fechar</button>
+        </div>
+        <canvas id="confetti-canvas"></canvas>
+    </div>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
